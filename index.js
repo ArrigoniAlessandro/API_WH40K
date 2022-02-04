@@ -11,6 +11,11 @@ apiServer.listen(port, host, () => {
 console.log("server running at http://%s:%d", host, port);
 });
 
+apiServer.get("/", (request, response) => {
+    console.log("home/");
+    response.send("<h1>WH40K</h1> "); 
+  });
+
 apiServer.post("/InvioMailUpgrade", (req,res) => {
     if(req.body.mail){
         console.log("mail:".mail);
