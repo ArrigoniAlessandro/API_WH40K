@@ -27,7 +27,7 @@ var transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
     user: 'arrigoni.alessandro@studenti.salesianisesto.it',
-    pass: 'Az-66393'
+    password: 'Az-66393'
   }
 });
 
@@ -35,7 +35,7 @@ var transporter = nodemailer.createTransport({
 var mailOptions = {
   from: 'mail di trasporto',
   to: mail,
-  subject: "Hai effettuato l'upgrade al tuo account ",
+  subject: 'oba',
   html: '<b>corpo mail</b>'  // invia il corpo in html
 };
 
